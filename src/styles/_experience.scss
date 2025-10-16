@@ -1,0 +1,79 @@
+@use 'variables' as *;
+
+
+.experience{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	border-top: 2px solid $border-line-white;
+
+	.experience-title{
+		display: flex;
+		justify-content: flex-end;
+		padding: 5.5em 4em 0 0;
+		border-right: 2px solid $border-line-white;
+		width: 50vw;
+		position: relative;
+		overflow: visible;
+
+		p{
+			font-size: 3.5em;
+			color: $color-saturated-black;
+			font-weight: 500;
+			position: sticky;
+			top: 2em;
+			height: 2em;
+
+			span{
+				color: $orange;
+			}
+		}
+	}
+
+	.experience-logs{
+		display: flex;
+		flex-direction: column;
+		padding: 6em 0 0 4em;
+		width: 50vw;
+
+		.experience-log{
+			margin-bottom: 4em;
+
+			div{
+				display: flex;
+
+				img{
+					height: 5.5em;
+					width: 5em;
+				}
+
+				div{
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					margin-left: 1.5em;
+					color: $color-saturated-black;
+
+					.timeline{
+						font-size: 1em;
+						color: $font-gray;
+					}
+
+					.position{
+						font-size: 1.1em;
+						font-weight: 600;
+					}
+
+					.institution-info{
+						color: #333;
+					}
+				}
+			}
+		}
+	}
+
+	.experience-logs, .experience-logs *{
+		//background-color: #f2f2f2;
+		//font-family: 'Courier New', Courier, monospace;
+	}
+}

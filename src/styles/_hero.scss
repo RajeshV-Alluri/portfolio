@@ -1,0 +1,127 @@
+@use 'variables' as *;
+
+.hero{
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 4em 0;
+
+	.design{
+		display: flex;
+		justify-content: left;
+    align-items: center;
+
+		.profile{
+			// margin: 0 1em;
+			height: 22em;
+			width: 22em;
+			margin: 1.5em 6em 2em 10em;
+		}
+
+		h1{
+			font-size: 5em;
+			font-weight: 500;
+			color: $moderate-red;
+		}
+
+		p{
+			margin-top: .5em;
+				font-family: 'Courier New', Courier, monospace;
+			span{
+				margin-right: .5em;
+				font-family: 'Courier New', Courier, monospace;
+			}
+		}
+	}
+
+	.editorials{
+		display: flex;
+		align-items: center;
+		margin: 2em 4em 2em 10em;
+
+		h1{
+			border-bottom: 1px solid $gray-text;
+			font-size: 1.3em;
+			font-weight: 550;
+			white-space: nowrap;
+			margin-right: 1em;
+		}
+
+		.slider{
+			display: flex;
+			align-items: center;
+			// starts here
+			width: 100%;
+			// border: 1px solid #c2483f;
+			height: 3em;
+			margin-right: 5em;
+			position: relative;
+			overflow: hidden;
+			-webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+      mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+
+			.list{
+				display: flex;
+				align-items: center;
+				// starts here
+				position: absolute;
+				width: max-content;
+				animation: marquee-scroll 15s linear infinite;
+
+				.item{
+					// starts here
+					//left: 100%;
+					margin: 0 2em;
+
+						img{						
+							filter: grayscale(1);
+							width: var(--width);
+							height: 1.5em;
+							//starts here
+						}
+				}
+			}
+		}
+	}
+
+.stats{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		justify-content: space-evenly;
+		font-size: 1.5em;
+
+		.single-stat{
+
+			.count{
+				font-size: 2em;
+				font-weight: 600;
+
+				.plus{
+					font-size: .8em;
+				}
+			}
+
+			.stat-info{
+				width: max-content;
+				margin-top: 1em;
+				padding-top: 1em;
+				border-top: 1px solid $gray-text;
+				//color: #0000008A;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+.count *{
+	color: #c2483f !important;
+}
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        /* Move the container left by exactly half its width */
+        transform: translateX(-50%);
+    }
+}

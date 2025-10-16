@@ -1,0 +1,51 @@
+[
+	{
+		"Src": "bhu.png",
+		"Years": "2024 - Present",
+		"Position": "Professor",
+		"Institution": "Banaras Hindu University",
+		"Location": "India"
+	},
+	{
+		"Src": "bhu.png",
+		"Years": "2023 - 2024",
+		"Position": "Associate Professor",
+		"Institution": "Banaras Hindu University",
+		"Location": "India"
+	},
+	{
+		"Src": "iim.png",
+		"Years": "2015",
+		"Position": "Visiting Professor",
+		"Institution": "Indian Institute of Management",
+		"Location": "Indore, India"
+	},
+	{
+		"Src": "iit-bhu.png",
+		"Years": "2012 - 2018",
+		"Position": "Visiting Professor",
+		"Institution": "Indian Institute of Technology, Banaras Hindu University",
+		"Location": "India"
+	},
+	{
+		"Src": "bhu.png",
+		"Years": "2011 - 2023",
+		"Position": "Assistant Professor Stage III",
+		"Institution": "Banaras Hindu University",
+		"Location": "India"
+	},
+	{
+		"Src": "UOA.png",
+		"Years": "2009 - 2011",
+		"Position": "Research Director",
+		"Institution": "Centre for Behavioural and Cognitive Sciences, University of Allahabad",
+		"Location": "India"
+	},
+	{
+		"Src": "amity.png",
+		"Years": "2007 - 2009",
+		"Position": "Lecturer",
+		"Institution": "Amity University",
+		"Location": "Lucknow, India"
+	}
+]

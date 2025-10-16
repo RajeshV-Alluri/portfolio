@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+.footer {
+	background-color: #eff0ef;
+	padding: 2em 0;
+	border-top: 2px solid $border-line-white;
+
+	ul{
+		display: flex;
+		justify-content: center;
+
+		li{
+			list-style: none;
+			margin: 2em;
+			
+			a{
+				text-decoration: none;
+				color: $color-black;
+				cursor: pointer;
+
+				i{
+					font-size: 1.8em;
+					color: $gray-text;
+				}
+			}
+		}
+	}
+}
+
+.footer, .footer * {
+	background-color: $yellow;
+}

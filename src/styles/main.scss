@@ -1,0 +1,35 @@
+@use 'variables' as *;
+@use 'navbar';
+@use 'hero';
+@use 'projects';
+@use 'fundings';
+@use 'publications';
+@use 'experience';
+@use'about';
+@use 'footer';
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	/* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+	background-color: $white;
+  color: $gray-text;
+  font-weight: 450;
+  font-family: 'Ppmori', arial, sans-serif;
+
+  scroll-behavior: smooth;
+}
+
+main{
+  min-height: 100vh;
+}

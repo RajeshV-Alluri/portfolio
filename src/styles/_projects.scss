@@ -1,0 +1,61 @@
+@use 'variables' as *;
+
+.project{
+	display: flex;
+	justify-content: space-evenly;
+	// border-top: 2px solid $border-line-white;
+	margin-top: 2em;
+	padding: 5em;
+
+	img{
+		height: 30em;
+		width: 22em;
+		margin-right: 3em;
+		box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
+
+	div{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		h1{
+			font-size: 3em;
+			font-weight: 500;
+			width: 15em;
+			margin: 0 0 1em 0;
+			color: $gray-text;
+		}
+
+		button{
+			border: none;
+
+			a{
+				text-decoration: none;
+				border: none;
+				font-size: 1.5em;
+				justify-content: center;
+				padding: 1em 2em;
+				font-weight: 500;
+				border-radius: .4em;
+				border: none;
+				background-color: $border-line-white;
+				color: $color-black;
+				cursor: pointer;
+
+				&:hover{
+					background-color: $color-black;
+					color: $color-white;
+					transition-property: color, background-color;
+					transition-duration: .8s, .8s;
+					transition-timing-function: cubic-bezier(.215,.61,.355,1), cubic-bezier(.215,.61,.355,1);
+				}
+			}
+		}
+	}
+}
+
+.project, .project *{
+	background-color: $yellow;
+}
